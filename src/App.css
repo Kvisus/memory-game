@@ -1,0 +1,41 @@
+.App {
+  background-color: darkslateblue;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.row {
+  display: flex;
+
+  gap: 10px;
+}
+
+.card {
+  padding: 20px;
+  background: white;
+  width: 50px;
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: larger;
+
+}
+
+.card:hover{
+  background: rgb(180, 180, 180);
+}
+.card.revealed{
+  cursor: default;
+  pointer-events: disabled;
+}
